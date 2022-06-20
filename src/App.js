@@ -1,8 +1,7 @@
 import React from 'react';
-import './style.css';
 import Expenses from './componants/Expenses.js';
 
-export default function App() {
+function App() {
   const expenses = [
     {
       id: 'e1',
@@ -27,11 +26,10 @@ export default function App() {
 
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <Expenses expense={expenses[0]} />
-      <Expenses expense={expenses[1]} />
-      <Expenses expense={expenses[2]} />
-      <Expenses expense={expenses[3]} />
+      <h2>Let's get started!</h2>
+      <Expenses items={expenses} />
     </div>
   );
 }
+
+export default App;
