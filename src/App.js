@@ -1,6 +1,7 @@
 import React from 'react';
-import Expenses from './componants/Expenses/Expenses';
-import NewExpense from './componants/NewExpense/NewExpense'
+
+import NewExpense from './components/NewExpense/NewExpense';
+import Expenses from './components/Expenses/Expenses';
 
 const App = () => {
   const expenses = [
@@ -26,9 +27,9 @@ const App = () => {
   ];
 
   const addExpenseHandler = expense => {
-    console.log('in App.js');
+    console.log('In App.js');
     console.log(expense);
-  } 
+  };
 
   // return React.createElement(
   //   'div',
